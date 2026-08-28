@@ -1,0 +1,71 @@
+/* --- 1. Custom Typography (Google Font) --- */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333333;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+}
+
+/* --- 2. Gallery Layout --- */
+.gallery-section {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.image-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.image-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  /* Smooth animation transition */
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* --- 3. Image Hover Transformations --- */
+
+/* Effect 1: Zoom / Scale */
+.hover-scale:hover {
+  transform: scale(1.1);
+}
+
+/* Effect 2: Slight Rotation */
+.hover-rotate:hover {
+  transform: rotate(4deg) scale(1.05);
+}
+
+/* Effect 3: Grayscale to Full Color */
+.hover-color {
+  filter: grayscale(100%);
+}
+
+.hover-color:hover {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
